@@ -19,3 +19,11 @@ const showIcon=(ID,value)=>{
     icon.setAttribute("src",`http://openweathermap.org/img/wn/${value}@2x.png`);
     icon.innerText=value;
 }
+
+const displayWeather=(temperature)=>{
+    showDetails("city-name",temperature.name);
+    showDetails("celcius",temperature.main.temp);
+    showDetails("weather",temperature.weather[0].main);
+    showIcon('icon-show',temperature.weather[0].icon);
+   
+   }
