@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current weather</title>
+    <!-- boostrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/ac9c55de9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="mx-auto w-50 mt-5">
+        <div class="input-group mb-3 ">
+            <input id="input-field" type="text" class="form-control" placeholder="Type City Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="showWeather()" class="btn btn-outline-secondary bg-danger text-white" type="button" id="button-addon2">Button</button>
+          </div>
+    </header>
+    <main class="w-100">
+        <section >
+            <div class="details text-center">
+                <img id="icon-show" src="image/02d@2x.png" alt="">
+                <h1 id="city-name">Dhaka</h1>
+                <h3><span id="celcius"> 38.06 </span>°C</h3>
+                <h5 id="weather">Clouds</h5>
+            </div>
+        </section>
+    </main>
+   
+     
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- weather js -->
+    <script src="js/weather.js"></script>
+</body>
+</html>
